@@ -1,4 +1,4 @@
-Name:           etcd2
+Name:           etcd
 Version:        %{_version}
 Release:        %{_release}%{?dist}
 Summary:        etcd
