@@ -10,4 +10,4 @@ mkdir -p build/RPMS/x86_64
 cd build/RPMS/x86_64
 curl -LO https://dl.bintray.com/jumperfly/yum/cfssl/latest/cfssl-$RPM_VERSION-$RPM_RELEASE.el7.x86_64.rpm
 cd ../../..
-envsubst < bintray-descriptor.json > bin/bintray-descriptor.json
+envsubst < bintray-descriptor.json > build/bintray-descriptor.json
