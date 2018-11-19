@@ -3,7 +3,7 @@
     "name": "etcd",
     "repo": "yum",
     "subject": "jumperfly",
-    "desc": "cfssl",
+    "desc": "etcd",
     "vcs_url": "https://github.com/jumperfly/etcd-rpm.git",
     "licenses": ["Apache-2.0"]
   },
