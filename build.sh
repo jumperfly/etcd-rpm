@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export RPM_RELEASE=$1
-export RPM_VERSION=3.2.24
+export RPM_VERSION=3.3.10
 export YUM_PATH=latest
 
 echo "########## Starting build for version $RPM_VERSION-$RPM_RELEASE ##########"
