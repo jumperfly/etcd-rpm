@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -e build ]; then
-  sudo rm -rf build
+  rm -rf build
 fi
 mkdir -p build/rpm/usr/share/licenses/etcd-$RPM_VERSION
 mkdir -p build/rpm/var/lib/etcd
