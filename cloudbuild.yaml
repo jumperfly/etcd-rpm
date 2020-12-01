@@ -3,6 +3,7 @@ steps:
   name: 'gcr.io/jumperfly/rpm-builder'
   env:
     - RPM_VERSION=3.4.3
+    - RPM_SPEC=etcd.spec
 artifacts:
   objects:
     location: 'gs://jumperfly-artifacts/rpm/etcd'
