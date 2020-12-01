@@ -7,4 +7,4 @@ steps:
 artifacts:
   objects:
     location: 'gs://jumperfly-artifacts/rpm/etcd'
-    paths: ['build/RPMs/x86_64/*.rpm']
+    paths: ['build/RPMS/x86_64/*.rpm']
