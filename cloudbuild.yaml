@@ -1,0 +1,9 @@
+steps:
+- id: build
+  name: 'gcr.io/jumperfly/rpm-builder'
+  env:
+    - RPM_VERSION=3.4.3
+artifacts:
+  objects:
+    location: 'gs://jumperfly-artifacts/rpm/etcd'
+    paths: ['build/RPMs/x86_64/*.rpm']
