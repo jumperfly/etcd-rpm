@@ -1,0 +1,8 @@
+steps:
+- id: promote
+  name: gcr.io/cloud-builders/gcloud
+  env:
+    - TAG_NAME=$TAG_NAME
+    - SHORT_SHA=$SHORT_SHA
+  entrypoint: 'bash'
+  args: ['bintray-promote.sh']
