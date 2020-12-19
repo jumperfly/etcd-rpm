@@ -1,10 +1,14 @@
+substitutions:
+  _ETCD_VERSION: "3.4.3"
 steps:
 - id: build
   name: 'gcr.io/jumperfly/rpm-builder'
   env:
-    - RPM_VERSION=3.4.3
+    - RPM_VERSION=${_ETCD_VERSION}
     - RPM_SPEC=etcd.spec
-artifacts:
-  objects:
-    location: 'gs://jumperfly-artifacts/rpm/etcd'
-    paths: ['build/RPMS/x86_64/*.rpm']
+- id: upload
+  name: gcr.io/cloud-builders/gcloud
+  env:
+    - ETCD_VERSION=${_ETCD_VERSION}
+  entrypoint: 'bash'
+  args: ['bintray-upload.sh']
