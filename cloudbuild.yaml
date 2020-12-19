@@ -1,5 +1,5 @@
 substitutions:
-  _ETCD_VERSION: "3.4.3"
+  _ETCD_VERSION: "3.4.14"
 steps:
 - id: build
   name: 'gcr.io/jumperfly/rpm-builder'
