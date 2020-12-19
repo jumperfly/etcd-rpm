@@ -6,6 +6,7 @@ steps:
   env:
     - RPM_VERSION=${_ETCD_VERSION}
     - RPM_SPEC=etcd.spec
+    - RPM_RELEASE_SUFFIX=.${SHORT_SHA}
 - id: upload
   name: gcr.io/cloud-builders/gcloud
   env:
